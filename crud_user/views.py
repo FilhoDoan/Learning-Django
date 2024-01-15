@@ -9,8 +9,8 @@ def register_user(request):
         
         usuarios.objects.create(username = username, passwd = passwd)
         user_dict = usuarios.objects.all()
-        return render(request,'pages/user_list.html', {'user_dict': user_dict}) 
-    return render(request,'pages/register_user.html')
+        return render(request,'crud_user/pages/user_list.html', {'user_dict': user_dict}) 
+    return render(request,'crud_user/pages/register_user.html')
 
 
 def get_all_user(request):

@@ -1,0 +1,9 @@
+.main-header{
+    background-color: black;
+    height: 10%;
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
