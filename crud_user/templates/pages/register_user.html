@@ -1,0 +1,80 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+rel="stylesheet" id="bootstrap-css">
+
+{% include 'base_templates/header.html' %}
+
+<html>
+	<style>
+		body{
+			background-image: url('https://free4kwallpapers.com/uploads/originals/2020/01/29/neon-city-wallpaper.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100%;
+		}
+		
+		.card{
+			height: 370px;
+			margin-top: auto;
+			margin-bottom: auto;
+			width: 400px;
+			background-color: rgba(0,0,0,0.5) !important;
+		}
+		
+		.card-header h3{
+			color: white;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.login_btn{
+			color: black;
+			background-color: #fff;
+			width: 150px;
+			display: flex; 
+			justify-content: center;	
+		}
+		
+		.login_btn:hover{
+			color: black;
+			background-color: white;
+		}
+		.group-btn-links{
+			display: flex;
+			justify-content: left;
+			
+		}		
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="main-header conteiner">
+			<h1>	
+				<a class= "labelCars" href="/register">
+					<i class="fa-solid fa-car" style="color:#fff"></i> 
+					<span style="color:#fff">Cars</span>
+				</a>
+			</h1>
+		</div>
+	</header>
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Register</h3>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<input type="text" class="form-control" placeholder="username">
+					</div>
+					<div class="input-group form-group">
+						<input type="password" class="form-control" placeholder="password">
+					</div>
+					<div class="group-btn-links">
+						<button href= "homepage/"class = "btn float-right login_btn">Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

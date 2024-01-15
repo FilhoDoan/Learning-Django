@@ -4,6 +4,6 @@ from crud_user import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('crud_user.urls')),
+    path('register/', include('crud_user.urls')),
     
 ]
