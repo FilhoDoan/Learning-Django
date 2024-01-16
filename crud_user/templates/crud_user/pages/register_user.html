@@ -2,22 +2,10 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
 rel="stylesheet" id="bootstrap-css">
 <link rel="stylesheet" href="{% static 'crud_user/styles/register.css' %}">
-
-{% comment %} {% include 'partials/header.html' %} {% endcomment %}
-
 <html>
-</head>
 <body>
-	<header class="header">
-		<div class="main-header conteiner">
-			{% comment %} <h1>	
-				<a class= "labelCars" href="/register">
-					<i class="fa-solid fa-car" style="color:#fff"></i> 
-					<span style="color:#fff">Cars</span>
-				</a>
-			</h1> {% endcomment %}
-		</div>
-	</header>
+	{% include 'crud_user/partials/header.html' %}
+	{% include 'crud_user/partials/headerCars.html' %}
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">

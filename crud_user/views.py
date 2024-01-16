@@ -2,6 +2,9 @@ from django.shortcuts import render
 from .models import usuarios
 from django.http import HttpResponse
 
+def homepage(request):
+    return render(request,'crud_user/pages/user_list.html')
+
 def register_user(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -13,8 +16,7 @@ def register_user(request):
     return render(request,'crud_user/pages/register_user.html')
 
 
-def get_all_user(request):
-    ...
+
     
     
     
