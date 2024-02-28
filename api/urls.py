@@ -3,6 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('',views.getUser),    
-    path('add/',views.postUser)    
+    path('',views.UserMethods)    
 ]
