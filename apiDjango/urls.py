@@ -4,7 +4,7 @@ from rest_framework import routers, serializers, viewsets
 from core.views import UserViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
+router.register(r'users', UserViewSet, basename='user')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
